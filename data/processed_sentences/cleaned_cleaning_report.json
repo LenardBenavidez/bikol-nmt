@@ -1,0 +1,9 @@
+{
+  "input_rows": 5961,
+  "dropped_empty": 38,
+  "dropped_untranslated": 427,
+  "dropped_too_short_or_long": 3601,
+  "dropped_bad_length_ratio": 11,
+  "dropped_exact_duplicates": 7,
+  "output_rows": 1877
+}

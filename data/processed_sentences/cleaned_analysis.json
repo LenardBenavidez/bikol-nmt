@@ -1,0 +1,221 @@
+{
+  "pairs": 1877,
+  "source": {
+    "length": {
+      "sentences": 1877,
+      "mean_tokens": 4.74,
+      "median_tokens": 4,
+      "min_tokens": 2,
+      "max_tokens": 27,
+      "length_histogram": {
+        "1-5": 1295,
+        "6-10": 468,
+        "11-20": 109,
+        "21-40": 5,
+        "41+": 0
+      }
+    },
+    "vocab": {
+      "total_tokens": 8897,
+      "unique_types": 2485,
+      "ttr": 0.2793
+    }
+  },
+  "target": {
+    "length": {
+      "sentences": 1877,
+      "mean_tokens": 4.83,
+      "median_tokens": 4,
+      "min_tokens": 2,
+      "max_tokens": 30,
+      "length_histogram": {
+        "1-5": 1307,
+        "6-10": 473,
+        "11-20": 93,
+        "21-40": 4,
+        "41+": 0
+      }
+    },
+    "vocab": {
+      "total_tokens": 9072,
+      "unique_types": 2230,
+      "ttr": 0.2458
+    }
+  },
+  "cross_side_type_overlap": {
+    "shared_types": 341,
+    "pct_of_source_types_shared": 13.72,
+    "note": "Source types also seen on target side (loanwords / shared words)."
+  },
+  "top_source_tokens": [
+    [
+      "mag",
+      428
+    ],
+    [
+      "an",
+      364
+    ],
+    [
+      "na",
+      326
+    ],
+    [
+      "sa",
+      287
+    ],
+    [
+      "ko",
+      248
+    ],
+    [
+      "mo",
+      237
+    ],
+    [
+      "ako",
+      212
+    ],
+    [
+      "nin",
+      169
+    ],
+    [
+      "ka",
+      112
+    ],
+    [
+      "dae",
+      106
+    ],
+    [
+      "ning",
+      104
+    ],
+    [
+      "su",
+      100
+    ],
+    [
+      "ay",
+      90
+    ],
+    [
+      "ma",
+      84
+    ],
+    [
+      "nag",
+      82
+    ],
+    [
+      "pag",
+      72
+    ],
+    [
+      "ga",
+      59
+    ],
+    [
+      "kan",
+      48
+    ],
+    [
+      "pwede",
+      47
+    ],
+    [
+      "ang",
+      46
+    ]
+  ],
+  "top_target_tokens": [
+    [
+      "to",
+      621
+    ],
+    [
+      "i",
+      364
+    ],
+    [
+      "the",
+      361
+    ],
+    [
+      "is",
+      310
+    ],
+    [
+      "you",
+      263
+    ],
+    [
+      "a",
+      204
+    ],
+    [
+      "my",
+      138
+    ],
+    [
+      "it",
+      122
+    ],
+    [
+      "in",
+      105
+    ],
+    [
+      "of",
+      102
+    ],
+    [
+      "me",
+      96
+    ],
+    [
+      "your",
+      80
+    ],
+    [
+      "for",
+      77
+    ],
+    [
+      "are",
+      70
+    ],
+    [
+      "have",
+      70
+    ],
+    [
+      "can",
+      69
+    ],
+    [
+      "he",
+      66
+    ],
+    [
+      "do",
+      59
+    ],
+    [
+      "will",
+      57
+    ],
+    [
+      "what",
+      53
+    ]
+  ],
+  "reference_vocab_overlap": {
+    "reference_size": 54300,
+    "source_types": 2485,
+    "shared_types": 1345,
+    "pct_of_source_in_reference": 54.12,
+    "note": "How much of your Bikol vocabulary already exists in the reference (Central Bikol / Tagalog). Lower overlap = more genuinely distinct local vocabulary = stronger justification for the project."
+  }
+}

@@ -1,0 +1,20 @@
+variant,standard
+# -------------------------------------------------------------------------
+# Spelling-standardization map for Task 1.2.
+# Catanduanes Bikol is mostly a SPOKEN language, so the same word gets written
+# many ways. List each non-standard spelling (left) and the single standard
+# form you want to keep (right). Matching is whole-word, case-insensitive.
+#
+# >>> IMPORTANT: The rows below are PLACEHOLDER EXAMPLES only. <<<
+# You and your native-speaker group must DECIDE and VERIFY the real standard
+# forms for your chosen variant (Pandan / Southern Catanduanes), then edit
+# this file. Delete these examples once you add your own. Leaving them as-is
+# could corrupt your corpus.
+#
+# Format:  variant,standard
+# Example (DELETE / REPLACE): if your group decides "diin" is the standard
+# spelling for "where", map the other spellings to it:
+# -------------------------------------------------------------------------
+# hain,diin
+# sain,diin
+# anoha,ano

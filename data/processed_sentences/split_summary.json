@@ -1,0 +1,11 @@
+{
+  "total_pairs": 1877,
+  "train": 1313,
+  "val": 281,
+  "test": 283,
+  "train_pct": 69.95,
+  "val_pct": 14.97,
+  "test_pct": 15.08,
+  "leakage_check": "PASSED (no source or pair shared across splits)",
+  "seed": 42
+}

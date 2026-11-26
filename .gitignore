@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model / training artifacts (added in later phases; keep the repo light)
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+checkpoints/
+outputs/
+wandb/
+
+# Large / intermediate data NOT part of the deliverable.
+# Phase 1 corpus deliverables are explicitly kept (see !-rules below).
+data/interim/
+*.tmp
+
+# --- Keep these Phase 1 deliverables (override any rule above) ---
+!data/
+!data/raw/
+!data/raw/virac_bikol.csv
+!data/processed_sentences/
+!data/processed_sentences/**

@@ -1,6 +1,12 @@
 # Phase 1 (corpus pipeline) needs only the standard library + matplotlib (for plots).
 matplotlib>=3.7
 
+# --- Phase 3 (API + web UI) ---
+fastapi
+uvicorn[standard]
+pydantic
+requests
+
 # --- Phases 2-4 (added later; listed here for reference) ---
 # torch
 # transformers>=4.40

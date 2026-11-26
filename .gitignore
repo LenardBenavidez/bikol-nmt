@@ -39,6 +39,9 @@ wandb/
 data/interim/
 *.tmp
 
+# Runtime feedback database (created when the API runs; not a deliverable)
+results/feedback.db
+
 # --- Keep these Phase 1 deliverables (override any rule above) ---
 !data/
 !data/raw/

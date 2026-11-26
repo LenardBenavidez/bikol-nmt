@@ -26,8 +26,13 @@ Thumbs.db
 *.pt
 *.ckpt
 checkpoints/
+checkpoint-*/
 outputs/
 wandb/
+
+# Keep the exported LoRA adapter (Phase 2 deliverable) despite *.safetensors above
+!models/nllb_bikol_lora/
+!models/nllb_bikol_lora/adapter_model.safetensors
 
 # Large / intermediate data NOT part of the deliverable.
 # Phase 1 corpus deliverables are explicitly kept (see !-rules below).

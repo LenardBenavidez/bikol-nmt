@@ -53,7 +53,7 @@ _tokenizer = None
 def get_model():
     global _model, _tokenizer
     if _model is None:
-        tok = AutoTokenizer.from_pretrained(ADAPTER_DIR if os.path.isdir(ADAPTER_DIR) else BASE_MODEL)
+        tok = AutoTokenizer.from_pretrained(BASE_MODEL)
         base = AutoModelForSeq2SeqLM.from_pretrained(BASE_MODEL)
         if os.path.isdir(ADAPTER_DIR):
             model = PeftModel.from_pretrained(base, ADAPTER_DIR)

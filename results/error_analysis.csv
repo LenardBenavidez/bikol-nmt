@@ -1,41 +1,41 @@
 No.,source_sentence,reference_translation,system_output,sentence_chrF++,error_category,note
-1,saro sana,only one,I wish it was,0.0,,
-2,iyo naan,that was it,yes no,1.7,,
-3,maniwang ka,you are skinny,watch it,2.3,,
-4,laog na,come inside,already,3.0,,
-5,buhay buhay,personal experience,live life,3.1,,
-6,naka paribud na ako,im home,I am already busy,3.3,,
-7,buena mano,first sale of the day,how many,3.3,,
-8,ma lumya,flabby or soft,to shine,3.4,,
-9,pala bulang,often actively attends cock fight,just a month,3.5,,
-10,reses na,it's time for recess,already done,4.0,,
-11,arog ka palan kaan,so you're like that,don?t go home,4.2,,
-12,pano pano,very full or crowded,how about,4.2,,
-13,daeng supog,blunt or crass,a good friend,4.2,,
-14,pagka lalaki,masculinity or mesnliness,to be a man,4.4,,
-15,hanga ako saimo,I admire,let me be with you,4.5,,
-16,ma binggo,play binggo,to be blended,4.9,,
-17,matanga na baga ning bangi,it's already late at night,a lot of sugar,5.1,,
-18,iyo ngani,that very thing,yes indeed,5.2,,
-19,piga tusok,poking or stabbing,to smoke,5.3,,
-20,mapait na nakalipas,bitter memories,a long time ago,5.6,,
-21,nag talok,planted rice,to be stolen,5.8,,
-22,balik kamo,come again,go back,6.0,,
-23,panganay na aki,oldest child,first time,6.0,,
-24,to place first,ma premero,to place first,6.5,Untranslated token (OOV),
-25,mag pasan,to carry on the shoulder,to pass,6.5,,
-26,menor de edad,a minor,underage,6.7,,
-27,salba bida,life vest,a lot of people,7.1,,
-28,nag leksion,presented a lesson,to learn,7.1,,
-29,ngalo na ako,I'm tired,I am too old,7.8,,
-30,mag patok,to chop with an axe,to get stuck,8.1,,
-31,ma tampo,to feel mad or disapointed,to be a thief,8.4,,
-32,mag iba ka samuya,join us,to change things,8.5,,
-33,maluya siya maki sama,he gets along poorly with people,he is too weak,8.6,,
-34,ma kutkut,to dig a hole,to cut,8.9,,
-35,katatakot nin uwak,a crow is scary,the eagle is afraid,9.1,,
-36,mag dakula,to grow big,to play,9.1,,
-37,payag payag,a hut or cabin,a shroud,9.6,,
-38,sa parteng uni,this side,in the middle of the night,9.7,,
-39,magka tukayo,they having the same name,to go to the beach,9.7,,
-40,makulog su ginibo mo saako,the thing that you do to me is painful,you can smell me,9.8,,
+1,saro sana,only one,I wish it was,0.0,Other: lexical/semantic substitution,unrelated meaning produced
+2,iyo naan,that was it,yes no,1.7,Other: lexical/semantic substitution,caught affirmation sense but wrong phrase
+3,maniwang ka,you are skinny,watch it,2.3,Other: lexical/semantic substitution,unrelated meaning
+4,laog na,come inside,already,3.0,Other: lexical/semantic substitution,only particle 'na' (already) rendered; content word 'laog' dropped
+5,buhay buhay,personal experience,live life,3.1,Other: lexical/semantic substitution,literal 'live life'; missed idiomatic 'personal experience'
+6,naka paribud na ako,im home,I am already busy,3.3,Other: lexical/semantic substitution,pronoun/particle caught; predicate wrong
+7,buena mano,first sale of the day,how many,3.3,Other: lexical/semantic substitution,Spanish-derived idiom mistranslated
+8,ma lumya,flabby or soft,to shine,3.4,Other: lexical/semantic substitution,wrong root meaning
+9,pala bulang,often actively attends cock fight,just a month,3.5,Other: lexical/semantic substitution,unrelated meaning
+10,reses na,it's time for recess,already done,4.0,Other: lexical/semantic substitution,particle 'na' caught; 'reses/recess' dropped
+11,arog ka palan kaan,so you're like that,don?t go home,4.2,Other: lexical/semantic substitution,unrelated meaning
+12,pano pano,very full or crowded,how about,4.2,Other: lexical/semantic substitution,wrong sense of 'pano' (how vs full)
+13,daeng supog,blunt or crass,a good friend,4.2,Other: lexical/semantic substitution,unrelated meaning
+14,pagka lalaki,masculinity or mesnliness,to be a man,4.4,Morphological or prefix error,root 'lalaki' (man) correct; 'pagka-' nominalizer rendered as infinitive — VERIFY
+15,hanga ako saimo,I admire,let me be with you,4.5,Other: lexical/semantic substitution,pronouns caught; predicate wrong
+16,ma binggo,play binggo,to be blended,4.9,Other: lexical/semantic substitution,wrong root ('binggo/bingo' misread)
+17,matanga na baga ning bangi,it's already late at night,a lot of sugar,5.1,Other: lexical/semantic substitution,unrelated meaning
+18,iyo ngani,that very thing,yes indeed,5.2,Other: lexical/semantic substitution,affirmation near-miss
+19,piga tusok,poking or stabbing,to smoke,5.3,Other: lexical/semantic substitution,unrelated meaning
+20,mapait na nakalipas,bitter memories,a long time ago,5.6,Other: lexical/semantic substitution,past sense 'nakalipas' caught; missed 'mapait' (bitter)
+21,nag talok,planted rice,to be stolen,5.8,Morphological or prefix error,'nag-' completed-aspect prefix mis-rendered as infinitive; root also wrong — VERIFY
+22,balik kamo,come again,go back,6.0,Other: lexical/semantic substitution,near-miss: 'go back' vs 'come again' (balik = return)
+23,panganay na aki,oldest child,first time,6.0,Other: lexical/semantic substitution,'first' caught; 'child' (aki) lost
+24,to place first,ma premero,to place first,6.5,Untranslated token (OOV),columns swapped; English copied verbatim and left untranslated
+25,mag pasan,to carry on the shoulder,to pass,6.5,Other: lexical/semantic substitution,'mag-'→'to' correct; root 'pasan' mistaken for 'pass' (phonetic)
+26,menor de edad,a minor,underage,6.7,Other: acceptable paraphrase,'underage' = 'a minor' — meaning is CORRECT; penalized by chrF wording mismatch (not a true error)
+27,salba bida,life vest,a lot of people,7.1,Other: lexical/semantic substitution,unrelated meaning
+28,nag leksion,presented a lesson,to learn,7.1,Morphological or prefix error,root related (leksion/lesson); 'nag-' past 'presented' rendered as infinitive 'to learn' — VERIFY
+29,ngalo na ako,I'm tired,I am too old,7.8,Other: lexical/semantic substitution,'I am' caught; predicate wrong
+30,mag patok,to chop with an axe,to get stuck,8.1,Other: lexical/semantic substitution,'mag-'→'to' correct; root wrong
+31,ma tampo,to feel mad or disapointed,to be a thief,8.4,Other: lexical/semantic substitution,unrelated meaning
+32,mag iba ka samuya,join us,to change things,8.5,Other: lexical/semantic substitution,wrong sense of 'iba' (other/change vs join)
+33,maluya siya maki sama,he gets along poorly with people,he is too weak,8.6,Other: lexical/semantic substitution,'he is' + literal 'weak'; missed idiom 'gets along poorly'
+34,ma kutkut,to dig a hole,to cut,8.9,Other: lexical/semantic substitution,'to' caught; root 'kutkut' mistaken for 'cut' (phonetic)
+35,katatakot nin uwak,a crow is scary,the eagle is afraid,9.1,Other: lexical/semantic substitution,domain near-miss (fear+bird) but wrong: crow->eagle; scary->afraid
+36,mag dakula,to grow big,to play,9.1,Other: lexical/semantic substitution,'mag-'→'to' correct; root wrong
+37,payag payag,a hut or cabin,a shroud,9.6,Other: lexical/semantic substitution,unrelated meaning
+38,sa parteng uni,this side,in the middle of the night,9.7,Other: lexical/semantic substitution,unrelated meaning
+39,magka tukayo,they having the same name,to go to the beach,9.7,Other: lexical/semantic substitution,unrelated meaning
+40,makulog su ginibo mo saako,the thing that you do to me is painful,you can smell me,9.8,Other: lexical/semantic substitution,unrelated meaning

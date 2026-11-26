@@ -129,7 +129,7 @@ def translate(req: TranslateRequest):
             **enc,
             forced_bos_token_id=tok.convert_tokens_to_ids(tgt),
             max_length=MAX_LEN,
-            num_beams=4,
+            num_beams=1,
             output_scores=True,
             return_dict_in_generate=True,
         )
@@ -220,7 +220,7 @@ HTML_PAGE = """<!doctype html>
       <label for="srcText" style="margin-top:10px;">Source text</label>
       <textarea id="srcText" placeholder="Type here..."></textarea>
       <div class="row">
-        <button class="primary" onclick="translate()">Translate</button>
+        <button class="primary" onclick="runTranslate()">Translate</button>
       </div>
     </div>
     <div class="pane">
@@ -249,7 +249,7 @@ HTML_PAGE = """<!doctype html>
 <script>
 let last = { src:"", out:"", srcLang:"", tgtLang:"" };
 
-async function translate() {
+async function runTranslate() {
   const srcText = document.getElementById('srcText').value;
   const srcLang = document.getElementById('srcLang').value;
   const tgtLang = document.getElementById('tgtLang').value;

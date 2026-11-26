@@ -22,7 +22,7 @@ No.,source_sentence,reference_translation,system_output,sentence_chrF++,error_ca
 21,nag talok,planted rice,to be stolen,5.8,Other: lexical/semantic substitution,native speaker: 'nag talok' = planted rice; output 'to be stolen' is entirely unrelated meaning
 22,balik kamo,come again,go back,6.0,Other: lexical/semantic substitution,near-miss: 'go back' vs 'come again' (balik = return)
 23,panganay na aki,oldest child,first time,6.0,Other: lexical/semantic substitution,'first' caught; 'child' (aki) lost
-24,to place first,ma premero,to place first,6.5,Untranslated token (OOV),columns swapped; English copied verbatim and left untranslated
+24,ma premero,to place first,to place first,6.5,Other: source-data artifact,"native speaker: the source row had its columns swapped (Bikol 'ma premero' = 'to place first'); the system output matches the reference, so this is a data glitch, not a model error"
 25,mag pasan,to carry on the shoulder,to pass,6.5,Other: lexical/semantic substitution,'mag-'→'to' correct; root 'pasan' mistaken for 'pass' (phonetic)
 26,menor de edad,a minor,underage,6.7,Other: acceptable paraphrase,'underage' = 'a minor' — meaning is CORRECT; penalized by chrF wording mismatch (not a true error)
 27,salba bida,life vest,a lot of people,7.1,Other: lexical/semantic substitution,unrelated meaning

@@ -139,7 +139,10 @@ def translate(req: TranslateRequest):
 
     # Confidence proxy: exp(mean token log-prob) of the generated sequence.
     try:
-        conf = float(torch.exp(out.sequences_scores[0]).item())
+        trans = model.compute_transition_scores(
+            out.sequences, out.scores, normalize_logits=True)[0]
+        trans = trans[torch.isfinite(trans)]
+        conf = float(torch.exp(trans.mean()).item())
         confidence = round(min(max(conf, 0.0), 1.0), 4)
     except Exception:
         confidence = None

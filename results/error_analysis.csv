@@ -19,14 +19,14 @@ No.,source_sentence,reference_translation,system_output,sentence_chrF++,error_ca
 18,iyo ngani,that very thing,yes indeed,5.2,Other: lexical/semantic substitution,affirmation near-miss
 19,piga tusok,poking or stabbing,to smoke,5.3,Other: lexical/semantic substitution,unrelated meaning
 20,mapait na nakalipas,bitter memories,a long time ago,5.6,Other: lexical/semantic substitution,past sense 'nakalipas' caught; missed 'mapait' (bitter)
-21,nag talok,planted rice,to be stolen,5.8,Morphological or prefix error,'nag-' completed-aspect prefix mis-rendered as infinitive; root also wrong — VERIFY
+21,nag talok,planted rice,to be stolen,5.8,Other: lexical/semantic substitution,native speaker: 'nag talok' = planted rice; output 'to be stolen' is entirely unrelated meaning
 22,balik kamo,come again,go back,6.0,Other: lexical/semantic substitution,near-miss: 'go back' vs 'come again' (balik = return)
 23,panganay na aki,oldest child,first time,6.0,Other: lexical/semantic substitution,'first' caught; 'child' (aki) lost
 24,to place first,ma premero,to place first,6.5,Untranslated token (OOV),columns swapped; English copied verbatim and left untranslated
 25,mag pasan,to carry on the shoulder,to pass,6.5,Other: lexical/semantic substitution,'mag-'→'to' correct; root 'pasan' mistaken for 'pass' (phonetic)
 26,menor de edad,a minor,underage,6.7,Other: acceptable paraphrase,'underage' = 'a minor' — meaning is CORRECT; penalized by chrF wording mismatch (not a true error)
 27,salba bida,life vest,a lot of people,7.1,Other: lexical/semantic substitution,unrelated meaning
-28,nag leksion,presented a lesson,to learn,7.1,Morphological or prefix error,root related (leksion/lesson); 'nag-' past 'presented' rendered as infinitive 'to learn' — VERIFY
+28,nag leksion,presented a lesson,to learn,7.1,Other: lexical/semantic substitution,native speaker: 'learn' is a different word (adal/adalan) not a form of 'leksion'; topically related but wrong word and aspect
 29,ngalo na ako,I'm tired,I am too old,7.8,Other: lexical/semantic substitution,'I am' caught; predicate wrong
 30,mag patok,to chop with an axe,to get stuck,8.1,Other: lexical/semantic substitution,'mag-'→'to' correct; root wrong
 31,ma tampo,to feel mad or disapointed,to be a thief,8.4,Other: lexical/semantic substitution,unrelated meaning

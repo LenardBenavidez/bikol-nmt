@@ -1,0 +1,15 @@
+{
+  "test_size": 283,
+  "decoding": "greedy (num_beams=1)",
+  "sacrebleu_version": "2.4.3",
+  "base": {
+    "BLEU": 1.91,
+    "chrF++": 21.08,
+    "TER": 141.63
+  },
+  "tuned": {
+    "BLEU": 19.71,
+    "chrF++": 40.45,
+    "TER": 67.16
+  }
+}

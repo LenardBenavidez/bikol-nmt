@@ -183,67 +183,57 @@ HTML_PAGE = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Catanduanes Bikol Translator</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
 <style>
-  :root { --bg:#f4f6f8; --card:#fff; --line:#d9dee3; --accent:#1f6feb; --text:#1a1f24; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:system-ui,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--text); }
-  header { padding:20px 16px; text-align:center; }
-  header h1 { margin:0; font-size:1.3rem; }
-  header p  { margin:4px 0 0; color:#5a6672; font-size:.9rem; }
-  .wrap { max-width:900px; margin:0 auto; padding:16px; }
-  .panes { display:flex; gap:16px; flex-wrap:wrap; }
-  .pane { flex:1 1 320px; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; }
-  .pane label { display:block; font-size:.8rem; color:#5a6672; margin-bottom:6px; }
-  select, textarea { width:100%; font-size:1rem; border:1px solid var(--line); border-radius:8px; padding:10px; font-family:inherit; }
-  textarea { height:160px; resize:vertical; }
-  .out { white-space:pre-wrap; min-height:160px; background:#fafbfc; border:1px solid var(--line); border-radius:8px; padding:10px; }
-  .row { display:flex; align-items:center; gap:10px; margin-top:10px; flex-wrap:wrap; }
-  button { border:0; border-radius:8px; padding:10px 16px; font-size:.95rem; cursor:pointer; }
-  .primary { background:var(--accent); color:#fff; }
-  .ghost { background:#eef1f4; color:#1a1f24; }
-  .meta { font-size:.8rem; color:#5a6672; margin-top:8px; }
-  .report { background:#fff3f0; color:#b23; }
-  .hidden { display:none; }
-  .ok { color:#1a7f37; }
+  /* Minimal rules for classes the (unchanged) JavaScript toggles or injects. */
+  .hidden { display: none; }
+  .ok { color: #198754; }
+  #outText { white-space: pre-wrap; min-height: 160px; }
 </style>
 </head>
-<body>
-<header>
-  <h1>Catanduanes (Virac) Bikol Translator</h1>
-  <p>Low-Resource NMT capstone · NLLB-200 fine-tuned with LoRA</p>
-</header>
-<div class="wrap">
-  <div class="panes">
-    <div class="pane">
-      <label for="srcLang">From</label>
-      <select id="srcLang">
-        <option value="bcl_North">Catanduanes Bikol</option>
-        <option value="eng_Latn">English</option>
-      </select>
-      <label for="srcText" style="margin-top:10px;">Source text</label>
-      <textarea id="srcText" placeholder="Type here..."></textarea>
-      <div class="row">
-        <button class="primary" onclick="runTranslate()">Translate</button>
+<body class="bg-light">
+<div class="container py-4" style="max-width: 960px;">
+  <header class="text-center mb-4">
+    <h1 class="h4 mb-1">Catanduanes (Virac) Bikol Translator</h1>
+    <p class="text-muted mb-0">Low-Resource NMT capstone · NLLB-200 fine-tuned with LoRA</p>
+  </header>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <label for="srcLang" class="form-label">From</label>
+          <select id="srcLang" class="form-select mb-3">
+            <option value="bcl_North">Catanduanes Bikol</option>
+            <option value="eng_Latn">English</option>
+          </select>
+          <label for="srcText" class="form-label">Source text</label>
+          <textarea id="srcText" class="form-control mb-3" rows="6" placeholder="Type here..."></textarea>
+          <button class="btn btn-primary" onclick="runTranslate()">Translate</button>
+        </div>
       </div>
     </div>
-    <div class="pane">
-      <label for="tgtLang">To</label>
-      <select id="tgtLang">
-        <option value="eng_Latn">English</option>
-        <option value="bcl_North">Catanduanes Bikol</option>
-      </select>
-      <label style="margin-top:10px;">Translation</label>
-      <div id="outText" class="out"></div>
-      <div class="row">
-        <button class="ghost" onclick="copyOut()">Copy</button>
-        <button class="report" onclick="openReport()">Report Inaccurate Translation</button>
-      </div>
-      <div id="meta" class="meta"></div>
-      <div id="reportBox" class="hidden" style="margin-top:10px;">
-        <textarea id="comment" style="height:70px;" placeholder="What was wrong? (optional)"></textarea>
-        <div class="row">
-          <button class="primary" onclick="sendReport()">Submit report</button>
-          <span id="reportMsg" class="meta"></span>
+    <div class="col-md-6">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <label for="tgtLang" class="form-label">To</label>
+          <select id="tgtLang" class="form-select mb-3">
+            <option value="eng_Latn">English</option>
+            <option value="bcl_North">Catanduanes Bikol</option>
+          </select>
+          <label class="form-label">Translation</label>
+          <div id="outText" class="form-control bg-white mb-2"></div>
+          <div id="meta" class="text-muted small mb-3"></div>
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-outline-secondary btn-sm" onclick="copyOut()">Copy</button>
+            <button class="btn btn-outline-danger btn-sm" onclick="openReport()">Report Inaccurate Translation</button>
+          </div>
+          <div id="reportBox" class="hidden mt-3">
+            <textarea id="comment" class="form-control mb-2" rows="3" placeholder="What was wrong? (optional)"></textarea>
+            <div class="d-flex align-items-center gap-2">
+              <button class="btn btn-primary btn-sm" onclick="sendReport()">Submit report</button>
+              <span id="reportMsg" class="small"></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
